@@ -1,0 +1,2 @@
+[2020-08-28 19:42:33.894] [sharedprocess] [info] main {"machineId":"9a050e5fe0fc0cc0f9497e6272374171e432b95bdb5deca6bfef94124e6b7672","windowId":2}
+[2020-08-28 19:42:33.912] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/vicyos/.config/Code - OSS/User/snippets'
