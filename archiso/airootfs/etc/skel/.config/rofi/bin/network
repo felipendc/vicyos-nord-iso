@@ -60,10 +60,10 @@ case $chosen in
 		fi 
         ;;
     $bmon)
-        termite -e bmon
+        urxvt -e bmon
         ;;
     $launch_cli)
-        termite -e nmtui
+        urxvt -e nmtui
         ;;
     $launch)
         nm-connection-editor
