@@ -3,9 +3,9 @@
 set -e -u
 
 iso_name=Vicyos-Nord
-iso_label="Vicyos-Nord-$(date +%Y-%m-%d)"
-iso_publisher="Vicyos-Nord <https://github.com/felipendc>"
-iso_application="Vicyos-Nord Live/Rescue CD"
+iso_label="vicyos-nord-$(date +%Y-%m-%d)"
+iso_publisher="vicyos-Nord <https://github.com/felipendc>"
+iso_application="vicyos-nord Live/Rescue CD"
 iso_version="$(date +%Y-%m-%d)"
 install_dir=arch
 work_dir=work
