@@ -236,3 +236,8 @@ export USE_CCACHE=1
 export CCACHE_DIR="${HOME}/.ccache"
 export CCACHE_EXEC="$(which ccache)"
 # ccache -M 150G
+
+
+#off
+#right
+#left
