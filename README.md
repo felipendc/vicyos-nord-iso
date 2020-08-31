@@ -1,5 +1,5 @@
-# Vicyos-Nord Edition iso
+# Vicyos-Linux iso. Getting it Unified (It still in development)!
 
-With this github you can build your own Vicyos-Nord-Iso.
+
 
 
