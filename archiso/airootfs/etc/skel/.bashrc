@@ -238,6 +238,3 @@ export CCACHE_EXEC="$(which ccache)"
 # ccache -M 150G
 
 
-#off
-#right
-#left
