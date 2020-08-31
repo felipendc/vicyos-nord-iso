@@ -57,4 +57,4 @@ run volumeicon &
 #run spotify &
 #run atom &
 
-
+pkexec /usr/bin/calamares
