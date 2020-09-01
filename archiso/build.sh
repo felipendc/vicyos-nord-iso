@@ -358,8 +358,10 @@ done
 
 # Build airootfs filesystem image
 vicyos_lsb() {
-    cp ${work_dir}work/archiso/airootfs/etc/vicyos-release ${work_dir}work/archiso/airootfs/etc/lsb-release 
+    cp ${work_dir}/x86_64/airootfs/etc/vicyos-release ${work_dir}/x86_64/airootfs/etc/lsb-release 
 }
+
+
 
 mkdir -p "${work_dir}"
 
