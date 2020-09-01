@@ -4,8 +4,8 @@ set -e -u
 
 iso_name=
 iso_label=
-iso_publisher=
-iso_application=
+iso_publisher=""
+iso_application=""
 iso_version=
 
 install_dir=arch
