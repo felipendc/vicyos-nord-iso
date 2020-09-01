@@ -9,7 +9,7 @@ git add --all .
 
 
 # It will print the output of the command "date"
-output=$(date +%Y.%m.%d__%T)
+output=$(date +%F_%T)
 
 # Give a comment to the commit if you want
 echo "####################################"
