@@ -355,6 +355,12 @@ while getopts 'N:V:L:P:A:D:w:o:g:vh' arg; do
     esac
 done
 
+
+# Build airootfs filesystem image
+vicyos_lsb() {
+    cp ${work_dir}work/archiso/airootfs/etc/vicyos-release ${work_dir}work/archiso/airootfs/etc/lsb-release 
+}
+
 mkdir -p "${work_dir}"
 
 run_once make_pacman_conf
@@ -367,6 +373,7 @@ run_once make_syslinux
 run_once make_isolinux
 run_once make_efi
 run_once make_efiboot
+run_once vicyos_lsb
 run_once make_prepare
 run_once make_iso
 run_once make_checks
