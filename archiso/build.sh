@@ -356,12 +356,12 @@ while getopts 'N:V:L:P:A:D:w:o:g:vh' arg; do
 done
 
 
-# Build airootfs filesystem image
+
 vicyos_lsb() {
     cp ${work_dir}/x86_64/airootfs/etc/vicyos-release ${work_dir}/x86_64/airootfs/etc/lsb-release 
 }
 
-
+# Build airootfs filesystem image
 
 mkdir -p "${work_dir}"
 
