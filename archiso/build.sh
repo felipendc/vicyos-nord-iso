@@ -3,10 +3,11 @@
 set -e -u
 
 iso_name=
-iso_label=""
-iso_publisher=""
-iso_application=""
-iso_version=""
+iso_label=
+iso_publisher=
+iso_application=
+iso_version=
+
 install_dir=arch
 work_dir=work
 out_dir=out
