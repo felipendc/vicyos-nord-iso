@@ -95,17 +95,17 @@ function enableServicesFunc() {
   
   # Enable CUPS fix!
   #systemctl enable org.cups.cupsd.service # Not working anymore!
-  systemctl enable --now cups
+  sudo systemctl enable --now cups
   sudo systemctl enable cups.service
   sudo systemctl start cups.service
   
-  systemctl enable bluetooth.service
-  systemctl enable ntpd.service
+  sudo systemctl enable bluetooth.service
+  sudo systemctl enable ntpd.service
   #systemctl enable smb.service
   #systemctl enable nmb.service
   #systemctl enable winbind.service
-  systemctl enable avahi-daemon.service
-  systemctl enable avahi-daemon.socket
+  sudo systemctl enable avahi-daemon.service
+  sudo systemctl enable avahi-daemon.socket
   #systemctl enable tlp.service
   #systemctl enable tlp-sleep.service
   #systemctl enable vnstat.service
