@@ -92,7 +92,13 @@ function enableServicesFunc() {
 	systemctl enable NetworkManager.service
 	systemctl enable virtual-machine-check.service
 	#systemctl enable update-mirror.service
-  systemctl enable org.cups.cupsd.service
+  
+  # Enable CUPS fix!
+  #systemctl enable org.cups.cupsd.service # Not working anymore!
+  systemctl enable --now cups
+  sudo systemctl enable cups.service
+  sudo systemctl start cups.service
+  
   systemctl enable bluetooth.service
   systemctl enable ntpd.service
   #systemctl enable smb.service
