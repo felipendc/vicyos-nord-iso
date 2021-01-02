@@ -125,20 +125,20 @@ function fixHibernateFunc() {
 }
 
 function initkeysFunc() {
-    pacman-key --init
-    pacman-key --populate archlinux
-    pacman-key --populate arcolinux
+    sudo pacman-key --init
+    sudo pacman-key --populate archlinux
+    sudo pacman-key --populate arcolinux
     #pacman-key --keyserver hkps://hkps.pool.sks-keyservers.net:443 -r 74F5DE85A506BF64
     #pacman-key --keyserver hkp://pool.sks-keyservers.net:80 -r 74F5DE85A506BF64
-    pacman-key --lsign-key 74F5DE85A506BF64
+    sudo pacman-key --lsign-key 74F5DE85A506BF64
     #pacman-key --lsign-key F1ABB772CE9F7FC0
     #sudo pacman-key --refresh-keys
 }
 
 function getNewMirrorCleanAndUpgrade() {
     reflector --threads 50 -l 100 -f 100 --number 20 --sort rate --save /etc/pacman.d/mirrorlist
-    pacman -Sc --noconfirm
-    pacman -Syyu --noconfirm
+    sudo pacman -Sc --noconfirm
+    sudo pacman -Syyu --noconfirm
 }
 
 deleteXfceWallpapers
